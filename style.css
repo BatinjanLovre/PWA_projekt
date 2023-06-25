@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+/*header i navbar*/
+
+header{
+    background-color: yellow;
+    margin-bottom: 20px;
+}
+
+.header_div{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    max-width: 1500px;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+nav > div{
+    max-width: 25%;
+    margin-right: 40px;
+}
+
+/*glavni dio*/
+
+.main{
+    max-width: 1500px;
+    min-height: 740px;
+    margin: auto;
+}
+
+#hr_music{
+    border: 5px solid magenta;
+    flex: 1;
+}
+
+#hr_sport{
+    border: 5px solid lawngreen;
+    flex: 1;
+}
+
+.pre{
+    display: flex;
+    align-items: baseline;
+    font-family: arial black, sans-serif;
+}
+
+.hr_div{
+    padding: 5px;
+    color: white;
+}
+
+#hr_div_music{
+    background-color: magenta;
+}
+
+#hr_div_sport{
+    background-color: lawngreen;
+}
+
+/**/
+/*dio za administraciju*/
+#hr_div_news{
+    background-color: blue;
+}
+
+#hr_div_editor{
+    background-color: red;
+}
+
+#hr_news{
+    border: 5px solid blue;
+    flex: 1;
+}
+
+#hr_editor{
+    border: 5px solid red;
+    flex: 1;
+}
+/**/
+
+.article-row{
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.row_image{
+    width: 495px;
+    height: 300px;
+    object-fit: fill;
+}
+
+h4{
+    width: 495px;
+    height: fit-content;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+h5{
+    margin: 0;
+    color: grey;
+}
+
+/*otvoreni clanak*/
+
+.div_article{
+    width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img_article_L{
+    width: 1000px;
+    object-fit: fill;
+}
+
+h2{
+    width: 1000px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#h_article{
+    text-decoration: underline;
+}
+
+.p_article{
+    width: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*footer i responzivnost*/
+
+footer{
+    background-color: yellow;
+    height: 90px;
+}
+
+@media (max-width: 425px){
+    nav{
+        flex-direction: column;
+    }
+    nav > div{
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 1630px){
+
+    .article-row{
+        flex-direction: column;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h5{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 525px){
+
+    .row_image{
+        width: 200px;
+        height: 121px;
+    }
+    
+    h4{
+        width: 200px;
+    }
+}
+
+/*responzivnost za clanke*/
+
+@media (max-width: 1023px){
+    .div_article{
+        width: 500px;
+    }
+    
+    .img_article_L{
+        width: 500px;
+    }
+    
+    h2{
+        width: 500px;
+
+    }
+    
+    .p_article{
+        width: 500px;
+    }
+}
+
+@media (max-width: 519px){
+    .div_article{
+        width: 250px;
+    }
+    
+    .img_article_L{
+        width: 250px;
+    }
+    
+    h2{
+        width: 250px;
+
+    }
+    
+    .p_article{
+        width: 250px;
+    }
+}
+
+/*administracija.php*/
+
+.logout_button{
+    padding: 10px 15px;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logout_button:hover{
+    background-color: red;
+    color: white;
+}
+
+#unos-main{
+    margin-bottom: 50px;
+}
+  
+  input[type=text], input[type=file], input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  #register-link{
+    float: right;
+    padding: 12px 15px;
+    text-decoration: underline;
+    color: blue;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #03915D;
+  }
+
+  #update{
+    background-color: #ffc107;
+    margin-bottom: 10px;
+  }
+
+  #update:hover{
+    background-color: #E6AE07;
+  }
+
+  #delete{
+    background-color: #dc3545;
+  }
+
+  #delete:hover{
+    background-color: #C22F3D;
+  }
+  
+  .form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  #check-col{
+    margin-top: 18px;
+  }
+
+  .form-error{
+    color: red;
+  }
+  
+  /* pocisti float nakon stupaca */
+  .form-row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .msg-success{
+    margin: 0 auto;
+    color: green;
+  }
+
+  .msg-error{
+    margin: 0 auto;
+    color: red;
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* responzivnost */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    #check-col{
+        margin-top: 0;
+    }
+  }
